@@ -1,11 +1,13 @@
-// document.getElementById("count-el").innerText = 5
-
-// change the count-el in the HTML to reflect the new count
-
+let countEL = document.getElementById("count-el");
 let count = 0;
 
 function increment() {
-  console.log("the button was clicked");
   count = count + 1;
+  countEL.innerText = count;
+}
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save() {
   console.log(count);
 }
+save();
